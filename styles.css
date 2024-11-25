@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #007bff, #5bc0de);
+    color: #fff;
+  }
+  
+  .hero button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #fff;
+    color: #007bff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .services {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .services h2 {
+    text-align: center;
+  }
+  
+  .service-card {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .service-card h3 {
+    color: #007bff;
+  }
+  
+  .about, .contact {
+    padding: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+  }
+  

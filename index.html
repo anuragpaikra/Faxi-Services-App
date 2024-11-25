@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAXI Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="logo">FAXI Services</div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to FAXI Services</h1>
+      <p>Your one-stop solution for Logistics, Cinematography, Tech Support, Web/App Development, and Digital Marketing.</p>
+      <button onclick="showServices()">Explore Services</button>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-card" onclick="showServiceDetails('Logistics')">
+        <h3>Logistics</h3>
+        <p>Reliable and affordable transportation services for businesses and individuals.</p>
+      </div>
+      <div class="service-card" onclick="showServiceDetails('Cinematography')">
+        <h3>Cinematography</h3>
+        <p>Professional video and content creation for brands and businesses.</p>
+      </div>
+      <div class="service-card" onclick="showServiceDetails('Web/App Development')">
+        <h3>Web/App Development</h3>
+        <p>Custom websites and mobile apps tailored to your needs.</p>
+      </div>
+      <div class="service-card" onclick="showServiceDetails('Digital Marketing')">
+        <h3>Digital Marketing</h3>
+        <p>Boost your brand visibility with targeted digital marketing campaigns.</p>
+      </div>
+      <div class="service-card" onclick="showServiceDetails('Tech Support')">
+        <h3>Tech Support</h3>
+        <p>Expert technical support to keep your business running smoothly.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>FAXI Services is a multi-faceted company offering innovative solutions in various industries. With customer satisfaction as our priority, we strive to deliver excellence through all our services.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <form onsubmit="sendEmail(event)">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 FAXI Services. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
